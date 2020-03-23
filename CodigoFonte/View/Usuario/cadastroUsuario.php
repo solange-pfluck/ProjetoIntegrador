@@ -1,9 +1,8 @@
 <?php
     include_once '../dependencias.php';
 
-
+    
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,31 +13,29 @@
 <body>
     <div class="conteudo">
         <h1 id="titulo"> Cadastro de Usuario </h1>
+
+        
             <!--login, peso, dt_nascimento, senha, sexo, nome, cpf, email, altura, id_usuario-->
             <form method="POST" action="?classe=usuarioControlador">
-                
-            <p>Id: <input type = "text" name = "id" id = "id"  size = "5" value="<?php echo $usuario['id'];?>" readonly></p>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-             </form>
+            <input type="hidden" name="acao" value="<?= $acao ?>">
+            <p>id_usuario: <input type = "text" name = "id" id = "id"  size = "5"  value="<?php echo $usuario['id'];?>" readonly></p>            
+            <p>Nome: <input type = "text" name = "id" id = "id"  size = "5" maxlength="255" value="<?php echo $usuario['nome'];?>" required></p>
+            <p>Peso: <input type = "number" name = "peso" id = "peso"  size = "5" maxlength="5" value="<?php echo $usuario['peso'];?>" required></p>
+            <p>Data de nascimento: <input type = "date" name = "dt_de_nascimento" id = "dt_de_nascimento"  size = "5" value="<?php echo $usuario['dt_de_nascimento'];?>" required></p>
+            <p>Senha: <input type = "password" name = "senha" id = "senha"  size = "5" maxlength="125" value="<?php echo $usuario['senha'];?>" required></p>
+            <p>CPF: <input type = "text" name = "cpf" id = "cpf"  size = "5" maxlength="12" value="<?php echo $usuario['cpf'];?>" required></p>
+            <!--escolher o sexo da pessoa-->
 
 
 
-    
-    
-    
-    
+            <p>E-mail: <input type = "text" name = "email" id = "email"  size = "5" maxlength="255" value="<?php echo $usuario['email'];?>" required></p>
+            <p>Altura: <input type = "number" name = "altura" id = "altura"  size = "5" maxlength="5" value="<?php echo $usuario['altura'];?>" required></p>
+
+            <input type="submit" value="<?php $rotuloBotao ?>">
+             </form> 
     
     </div>
-
-    
+  
+ 
 </body>
 </html>
