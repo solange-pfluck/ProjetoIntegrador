@@ -15,9 +15,13 @@
         <h1 id="titulo"> Cadastro de Usuario </h1>
 
         
-            <!--login, peso, dt_nascimento, senha, sexo, nome, cpf, email, altura, id_usuario-->
+            <!-- #Front-End entrada de aquivos 
+            #Mirado para controlador       
+            
+            
+            -->
             <form method="POST" action="?classe=usuarioControlador">
-            <input type="hidden" name="acao" value="<?= $acao ?>">
+            <input type="hidden" name="acao" value="<?php echo $acao; ?>">
             <p>id_usuario: <input type = "text" name = "id" id = "id"  size = "5"  value="<?php echo $usuario['id'];?>" readonly></p>            
             <p>Nome: <input type = "text" name = "id" id = "id"  size = "5" maxlength="255" value="<?php echo $usuario['nome'];?>" required></p>
             <p>Peso: <input type = "number" name = "peso" id = "peso"  size = "5" maxlength="5" value="<?php echo $usuario['peso'];?>" required></p>
@@ -25,14 +29,15 @@
             <p>Senha: <input type = "password" name = "senha" id = "senha"  size = "5" maxlength="125" value="<?php echo $usuario['senha'];?>" required></p>
             <p>CPF: <input type = "text" name = "cpf" id = "cpf"  size = "5" maxlength="12" value="<?php echo $usuario['cpf'];?>" required></p>
             <!--escolher o sexo da pessoa-->
+                
+            <p>Sexo: </input type="text" name="sexo" id="sexo" size= "5" maxlength="12" value ="<?php echo $usuario['sexo'];?>" required>
 
-
-
+            <!----------------------------->
             <p>E-mail: <input type = "text" name = "email" id = "email"  size = "5" maxlength="255" value="<?php echo $usuario['email'];?>" required></p>
             <p>Altura: <input type = "number" name = "altura" id = "altura"  size = "5" maxlength="5" value="<?php echo $usuario['altura'];?>" required></p>
 
             <input type="submit" value="<?php $rotuloBotao ?>">
-             </form> 
+            </form> 
     
     </div>
   

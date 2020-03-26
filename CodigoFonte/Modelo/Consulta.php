@@ -1,6 +1,4 @@
-
-  <?php
-
+<?php
 
 class Consulta {
     private $id_consulta;
