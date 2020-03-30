@@ -29,15 +29,15 @@
             <!--escolher o sexo da pessoa
                 #Pode ser que seja mudado depois 
             -->
-
+            <!--
             <p> Sexo:     
                 <label><input type="radio" name="sexo" value="M" /> Masculino</label>
                 <label><input type="radio" name="sexo" value="F" /> Feminino</label>
             </p>
-
-                               
-            <!--<p>Sexo: </input type="text" name="sexo" id="sexo" size= "5" maxlength="12" value ="<?php echo $usuario['sexo'];?>" required>
             -->
+                               
+            <p>Sexo: </input type="text" name="sexo" id="sexo" size= "5" maxlength="12" value ="<?php echo $usuario['sexo'];?>" required>
+            
             <!----------------------------->
             <p>E-mail: <input type = "text" name = "email" id = "email"  size = "5" maxlength="255" value="<?php echo $usuario['email'];?>" required></p>
             <p>Altura: <input type = "number" name = "altura" id = "altura"  size = "5" maxlength="5" value="<?php echo $usuario['altura'];?>" required></p>
@@ -47,7 +47,7 @@
 
             </form> 
     
-    </div>
+    </div> 
   
  
 </body>

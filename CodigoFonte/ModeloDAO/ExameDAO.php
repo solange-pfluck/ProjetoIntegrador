@@ -4,9 +4,15 @@
 
 
     class usuarioDAO{
+        private $conexao;
+
         
-            public function __contruct(){}
-        
+            public function __contruct(){
+                $this->conexao = Conexao::conectar;
+
+
+            }
+
         
         
             public function inserirUsuario(Usuario $usuario){}

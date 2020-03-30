@@ -1,6 +1,6 @@
-<?php
++<?php
 
-    require_once 'conexao.php'
+    require_once 'conexao.php';
 
 
     class usuarioDAO{
@@ -9,14 +9,11 @@
 
             public function __contruct(){
                 $this-> Conexao::conectar();
-
-            }
-        
-        
-        
+            }               
             public function inserirUsuario(Usuario $usuario){
-                  $sql = "insert into usuario(id_usuario, nome, peso, data_nascimento, senha, CPF, sexo, email, altura) values  "
-
+            $sql = "insert into usuario values(login, peso, data_nascimento, senha, sexo, nome, CPF, emil, altura, id_usuario)  
+            values('"$usuario->getLogin()"')"; 
+            
 
             }
         
