@@ -36,7 +36,7 @@
             </p>
             -->
                                
-            <p>Sexo: </input type="text" name="sexo" id="sexo" size= "5" maxlength="12" value ="<?php echo $usuario['sexo'];?>" required>
+            <p>Sexo: </input type="text" name="sexo" id="sexo" size= "5" maxlength="12" value ="<?php echo $usuario['sexo'];?>" required> <p>
             
             <!----------------------------->
             <p>E-mail: <input type = "text" name = "email" id = "email"  size = "5" maxlength="255" value="<?php echo $usuario['email'];?>" required></p>
